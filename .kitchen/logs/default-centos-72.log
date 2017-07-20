@@ -1,0 +1,250 @@
+I, [2017-07-20T18:18:33.409937 #10238]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2017-07-20T18:18:33.410413 #10238]  INFO -- default-centos-72: Preparing files for transfer
+I, [2017-07-20T18:18:33.410535 #10238]  INFO -- default-centos-72: Preparing dna.json
+I, [2017-07-20T18:18:33.410739 #10238]  INFO -- default-centos-72: Preparing cookbooks from project directory
+I, [2017-07-20T18:18:33.617277 #10238]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2017-07-20T18:18:33.621660 #10238]  INFO -- default-centos-72: Preparing data_bags
+I, [2017-07-20T18:18:33.624936 #10238]  INFO -- default-centos-72: Preparing environments
+I, [2017-07-20T18:18:33.625391 #10238]  INFO -- default-centos-72: Preparing roles
+I, [2017-07-20T18:18:33.639320 #10238]  INFO -- default-centos-72: Preparing solo.rb
+I, [2017-07-20T18:18:33.890273 #10238]  INFO -- default-centos-72: -----> Installing Chef Omnibus (install only if missing)
+I, [2017-07-20T18:18:33.893204 #10238]  INFO -- default-centos-72: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2017-07-20T18:18:33.893278 #10238]  INFO -- default-centos-72: Trying wget...
+I, [2017-07-20T18:18:35.213993 #10238]  INFO -- default-centos-72: Download complete.
+I, [2017-07-20T18:18:35.287102 #10238]  INFO -- default-centos-72: el 7 x86_64
+I, [2017-07-20T18:18:35.287195 #10238]  INFO -- default-centos-72: Getting information for chef stable  for el...
+I, [2017-07-20T18:18:35.287232 #10238]  INFO -- default-centos-72: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2017-07-20T18:18:35.287264 #10238]  INFO -- default-centos-72:   to file /tmp/install.sh.10895/metadata.txt
+I, [2017-07-20T18:18:35.288264 #10238]  INFO -- default-centos-72: trying wget...
+I, [2017-07-20T18:18:36.746943 #10238]  INFO -- default-centos-72: sha1	2298c6b99770f6ed59e326975e83d0b534797768
+I, [2017-07-20T18:18:36.747040 #10238]  INFO -- default-centos-72: sha256	6bc82b7e868b858a4710f208bf92407bbc56a4273ca78e3dfabc92ed9514b53f
+I, [2017-07-20T18:18:36.747084 #10238]  INFO -- default-centos-72: url	https://packages.chef.io/files/stable/chef/13.2.20/el/7/chef-13.2.20-1.el7.x86_64.rpm
+I, [2017-07-20T18:18:36.747136 #10238]  INFO -- default-centos-72: version	13.2.20
+I, [2017-07-20T18:18:36.749633 #10238]  INFO -- default-centos-72: downloaded metadata file looks valid...
+I, [2017-07-20T18:18:36.788785 #10238]  INFO -- default-centos-72: /tmp/omnibus/cache/chef-13.2.20-1.el7.x86_64.rpm already exists, verifiying checksum...
+I, [2017-07-20T18:18:36.788951 #10238]  INFO -- default-centos-72: Comparing checksum with sha256sum...
+I, [2017-07-20T18:18:37.145558 #10238]  INFO -- default-centos-72: checksum compare succeeded, using existing file!
+I, [2017-07-20T18:18:37.145632 #10238]  INFO -- default-centos-72: 
+I, [2017-07-20T18:18:37.145660 #10238]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-07-20T18:18:37.145680 #10238]  INFO -- default-centos-72: 
+I, [2017-07-20T18:18:37.145698 #10238]  INFO -- default-centos-72: You are installing an omnibus package without a version pin.  If you are installing
+I, [2017-07-20T18:18:37.145721 #10238]  INFO -- default-centos-72: on production servers via an automated process this is DANGEROUS and you will
+I, [2017-07-20T18:18:37.145746 #10238]  INFO -- default-centos-72: be upgraded without warning on new releases, even to new major releases.
+I, [2017-07-20T18:18:37.145764 #10238]  INFO -- default-centos-72: Letting the version float is only appropriate in desktop, test, development or
+I, [2017-07-20T18:18:37.145781 #10238]  INFO -- default-centos-72: CI/CD environments.
+I, [2017-07-20T18:18:37.145797 #10238]  INFO -- default-centos-72: 
+I, [2017-07-20T18:18:37.145822 #10238]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-07-20T18:18:37.145840 #10238]  INFO -- default-centos-72: 
+I, [2017-07-20T18:18:37.145865 #10238]  INFO -- default-centos-72: Installing chef 
+I, [2017-07-20T18:18:37.145892 #10238]  INFO -- default-centos-72: installing with rpm...
+I, [2017-07-20T18:18:37.426521 #10238]  INFO -- default-centos-72: warning: /tmp/omnibus/cache/chef-13.2.20-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2017-07-20T18:18:38.415158 #10238]  INFO -- default-centos-72: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2017-07-20T18:18:38.442333 #10238]  INFO -- default-centos-72: Updating / installing...
+I, [2017-07-20T18:18:49.473300 #10238]  INFO -- default-centos-72:    1:chef-13.2.20-1.el7                                                 (  2%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2017-07-20T18:18:51.834520 #10238]  INFO -- default-centos-72: Thank you for installing Chef!
+I, [2017-07-20T18:18:51.909571 #10238]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2017-07-20T18:18:56.590956 #10238]  INFO -- default-centos-72: Starting Chef Client, version 13.2.20
+I, [2017-07-20T18:19:08.149996 #10238]  INFO -- default-centos-72: Creating a new client identity for default-centos-72 using the validator key.
+I, [2017-07-20T18:19:08.245681 #10238]  INFO -- default-centos-72: resolving cookbooks for run list: ["mysqlwrapper"]
+I, [2017-07-20T18:19:08.324140 #10238]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2017-07-20T18:19:08.341033 #10238]  INFO -- default-centos-72:   - mysqlwrapper (0.1.0)
+I, [2017-07-20T18:19:08.377738 #10238]  INFO -- default-centos-72:   - mysql (8.4.0)
+I, [2017-07-20T18:19:08.377843 #10238]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2017-07-20T18:19:08.377894 #10238]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2017-07-20T18:19:08.401033 #10238]  INFO -- default-centos-72: Converging 1 resources
+I, [2017-07-20T18:19:08.401170 #10238]  INFO -- default-centos-72: Recipe: mysqlwrapper::default
+I, [2017-07-20T18:19:08.437668 #10238]  INFO -- default-centos-72:   * mysql_service[mysql-foo] action create
+I, [2017-07-20T18:19:08.475441 #10238]  INFO -- default-centos-72:     * mysql_server_installation_package[mysql-foo] action install
+I, [2017-07-20T18:19:53.305671 #10238]  INFO -- default-centos-72:       * yum_package[mysql-community-server] action install
+I, [2017-07-20T18:19:53.305763 #10238]  INFO -- default-centos-72:  * No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.305796 #10238]  INFO -- default-centos-72:  ================================================================================
+I, [2017-07-20T18:19:53.305824 #10238]  INFO -- default-centos-72:  Error executing action `install` on resource 'yum_package[mysql-community-server]'
+I, [2017-07-20T18:19:53.305850 #10238]  INFO -- default-centos-72:  ================================================================================
+I, [2017-07-20T18:19:53.305886 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.305911 #10238]  INFO -- default-centos-72:  Chef::Exceptions::Package
+I, [2017-07-20T18:19:53.305933 #10238]  INFO -- default-centos-72:  -------------------------
+I, [2017-07-20T18:19:53.305957 #10238]  INFO -- default-centos-72:  No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.305980 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306002 #10238]  INFO -- default-centos-72:  Resource Declaration:
+I, [2017-07-20T18:19:53.306025 #10238]  INFO -- default-centos-72:  ---------------------
+I, [2017-07-20T18:19:53.306047 #10238]  INFO -- default-centos-72:  # In /tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb
+I, [2017-07-20T18:19:53.306070 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306093 #10238]  INFO -- default-centos-72:   17:       package package_name do
+I, [2017-07-20T18:19:53.306116 #10238]  INFO -- default-centos-72:   18:         version package_version if package_version
+I, [2017-07-20T18:19:53.306161 #10238]  INFO -- default-centos-72:   19:         options package_options if package_options
+I, [2017-07-20T18:19:53.306187 #10238]  INFO -- default-centos-72:   20:         notifies :install, 'package[perl-Sys-Hostname-Long]', :immediately if platform_family?('suse')
+I, [2017-07-20T18:19:53.306211 #10238]  INFO -- default-centos-72:   21:         notifies :run, 'execute[Initial DB setup script]', :immediately if platform_family?('suse')
+I, [2017-07-20T18:19:53.306235 #10238]  INFO -- default-centos-72:   22:         action :install
+I, [2017-07-20T18:19:53.306257 #10238]  INFO -- default-centos-72:   23:       end
+I, [2017-07-20T18:19:53.306279 #10238]  INFO -- default-centos-72:   24: 
+I, [2017-07-20T18:19:53.306300 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306322 #10238]  INFO -- default-centos-72:  Compiled Resource:
+I, [2017-07-20T18:19:53.306343 #10238]  INFO -- default-centos-72:  ------------------
+I, [2017-07-20T18:19:53.306366 #10238]  INFO -- default-centos-72:  # Declared in /tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb:17:in `block in <class:MysqlServerInstallationPackage>'
+I, [2017-07-20T18:19:53.306388 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306410 #10238]  INFO -- default-centos-72:  yum_package("mysql-community-server") do
+I, [2017-07-20T18:19:53.306432 #10238]  INFO -- default-centos-72:    package_name "mysql-community-server"
+I, [2017-07-20T18:19:53.306454 #10238]  INFO -- default-centos-72:    action [:install]
+I, [2017-07-20T18:19:53.306476 #10238]  INFO -- default-centos-72:    default_guard_interpreter :default
+I, [2017-07-20T18:19:53.306498 #10238]  INFO -- default-centos-72:    declared_type :package
+I, [2017-07-20T18:19:53.306540 #10238]  INFO -- default-centos-72:    cookbook_name "mysqlwrapper"
+I, [2017-07-20T18:19:53.306563 #10238]  INFO -- default-centos-72:  end
+I, [2017-07-20T18:19:53.306585 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306607 #10238]  INFO -- default-centos-72:  System Info:
+I, [2017-07-20T18:19:53.306629 #10238]  INFO -- default-centos-72:  ------------
+I, [2017-07-20T18:19:53.306650 #10238]  INFO -- default-centos-72:  chef_version=13.2.20
+I, [2017-07-20T18:19:53.306672 #10238]  INFO -- default-centos-72:  platform=centos
+I, [2017-07-20T18:19:53.306694 #10238]  INFO -- default-centos-72:  platform_version=7.2.1511
+I, [2017-07-20T18:19:53.306716 #10238]  INFO -- default-centos-72:  ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+I, [2017-07-20T18:19:53.306738 #10238]  INFO -- default-centos-72:  program_name=chef-solo worker: ppid=11018;start=12:48:53;
+I, [2017-07-20T18:19:53.306760 #10238]  INFO -- default-centos-72:  executable=/opt/chef/bin/chef-solo
+I, [2017-07-20T18:19:53.306782 #10238]  INFO -- default-centos-72:  
+I, [2017-07-20T18:19:53.306801 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.306819 #10238]  INFO -- default-centos-72:       ================================================================================
+I, [2017-07-20T18:19:53.306844 #10238]  INFO -- default-centos-72:       Error executing action `install` on resource 'mysql_server_installation_package[mysql-foo]'
+I, [2017-07-20T18:19:53.306866 #10238]  INFO -- default-centos-72:       ================================================================================
+I, [2017-07-20T18:19:53.306897 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.306927 #10238]  INFO -- default-centos-72:       Chef::Exceptions::Package
+I, [2017-07-20T18:19:53.306959 #10238]  INFO -- default-centos-72:       -------------------------
+I, [2017-07-20T18:19:53.306994 #10238]  INFO -- default-centos-72:       yum_package[mysql-community-server] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb line 17) had an error: Chef::Exceptions::Package: No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.307014 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.307032 #10238]  INFO -- default-centos-72:       Resource Declaration:
+I, [2017-07-20T18:19:53.307072 #10238]  INFO -- default-centos-72:       ---------------------
+I, [2017-07-20T18:19:53.307094 #10238]  INFO -- default-centos-72:       # In /tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_service.rb
+I, [2017-07-20T18:19:53.307113 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.307137 #10238]  INFO -- default-centos-72: 36:           install = mysql_server_installation(name, &block)
+I, [2017-07-20T18:19:53.307159 #10238]  INFO -- default-centos-72: 37:         when 'package'
+I, [2017-07-20T18:19:53.307176 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.307194 #10238]  INFO -- default-centos-72:       Compiled Resource:
+I, [2017-07-20T18:19:53.307211 #10238]  INFO -- default-centos-72:       ------------------
+I, [2017-07-20T18:19:53.307227 #10238]  INFO -- default-centos-72:       # Declared in /tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_service.rb:36:in `installation'
+I, [2017-07-20T18:19:53.307245 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.307261 #10238]  INFO -- default-centos-72:       mysql_server_installation_package("mysql-foo") do
+I, [2017-07-20T18:19:53.307281 #10238]  INFO -- default-centos-72:  action [:install]
+I, [2017-07-20T18:19:53.307302 #10238]  INFO -- default-centos-72:  default_guard_interpreter :default
+I, [2017-07-20T18:19:53.307322 #10238]  INFO -- default-centos-72:  declared_type :mysql_server_installation
+I, [2017-07-20T18:19:53.307342 #10238]  INFO -- default-centos-72:  cookbook_name "mysqlwrapper"
+I, [2017-07-20T18:19:53.307363 #10238]  INFO -- default-centos-72:  version "5.5"
+I, [2017-07-20T18:19:53.307384 #10238]  INFO -- default-centos-72:  major_version "5.5"
+I, [2017-07-20T18:19:53.307404 #10238]  INFO -- default-centos-72:  package_name "mysql-community-server"
+I, [2017-07-20T18:19:53.307421 #10238]  INFO -- default-centos-72:       end
+I, [2017-07-20T18:19:53.307437 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.307453 #10238]  INFO -- default-centos-72:       System Info:
+I, [2017-07-20T18:19:53.307470 #10238]  INFO -- default-centos-72:       ------------
+I, [2017-07-20T18:19:53.307486 #10238]  INFO -- default-centos-72:       chef_version=13.2.20
+I, [2017-07-20T18:19:53.307502 #10238]  INFO -- default-centos-72:       platform=centos
+I, [2017-07-20T18:19:53.307518 #10238]  INFO -- default-centos-72:       platform_version=7.2.1511
+I, [2017-07-20T18:19:53.307534 #10238]  INFO -- default-centos-72:       ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+I, [2017-07-20T18:19:53.307551 #10238]  INFO -- default-centos-72:       program_name=chef-solo worker: ppid=11018;start=12:48:53;
+I, [2017-07-20T18:19:53.307568 #10238]  INFO -- default-centos-72:       executable=/opt/chef/bin/chef-solo
+I, [2017-07-20T18:19:53.307585 #10238]  INFO -- default-centos-72:       
+I, [2017-07-20T18:19:53.317309 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317396 #10238]  INFO -- default-centos-72:     ================================================================================
+I, [2017-07-20T18:19:53.317424 #10238]  INFO -- default-centos-72:     Error executing action `create` on resource 'mysql_service[mysql-foo]'
+I, [2017-07-20T18:19:53.317445 #10238]  INFO -- default-centos-72:     ================================================================================
+I, [2017-07-20T18:19:53.317465 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317484 #10238]  INFO -- default-centos-72:     Chef::Exceptions::Package
+I, [2017-07-20T18:19:53.317503 #10238]  INFO -- default-centos-72:     -------------------------
+I, [2017-07-20T18:19:53.317523 #10238]  INFO -- default-centos-72:     mysql_server_installation_package[mysql-foo] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_service.rb line 36) had an error: Chef::Exceptions::Package: yum_package[mysql-community-server] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb line 17) had an error: Chef::Exceptions::Package: No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.317541 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317559 #10238]  INFO -- default-centos-72:     Resource Declaration:
+I, [2017-07-20T18:19:53.317578 #10238]  INFO -- default-centos-72:     ---------------------
+I, [2017-07-20T18:19:53.317618 #10238]  INFO -- default-centos-72:     # In /tmp/kitchen/cache/cookbooks/mysqlwrapper/recipes/default.rb
+I, [2017-07-20T18:19:53.317641 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317660 #10238]  INFO -- default-centos-72:       7: mysql_service 'mysql-foo' do
+I, [2017-07-20T18:19:53.317679 #10238]  INFO -- default-centos-72:       8:   port '3306'
+I, [2017-07-20T18:19:53.317696 #10238]  INFO -- default-centos-72:       9:   version '5.5'
+I, [2017-07-20T18:19:53.317714 #10238]  INFO -- default-centos-72:      10:   initial_root_password 'rajat@'
+I, [2017-07-20T18:19:53.317732 #10238]  INFO -- default-centos-72:      11:   action  [:create, :start]
+I, [2017-07-20T18:19:53.317750 #10238]  INFO -- default-centos-72:      12: end
+I, [2017-07-20T18:19:53.317773 #10238]  INFO -- default-centos-72:      13: 
+I, [2017-07-20T18:19:53.317792 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317809 #10238]  INFO -- default-centos-72:     Compiled Resource:
+I, [2017-07-20T18:19:53.317827 #10238]  INFO -- default-centos-72:     ------------------
+I, [2017-07-20T18:19:53.317845 #10238]  INFO -- default-centos-72:     # Declared in /tmp/kitchen/cache/cookbooks/mysqlwrapper/recipes/default.rb:7:in `from_file'
+I, [2017-07-20T18:19:53.317863 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.317881 #10238]  INFO -- default-centos-72:     mysql_service("mysql-foo") do
+I, [2017-07-20T18:19:53.317899 #10238]  INFO -- default-centos-72:       action [:create, :start]
+I, [2017-07-20T18:19:53.317917 #10238]  INFO -- default-centos-72:       default_guard_interpreter :default
+I, [2017-07-20T18:19:53.317934 #10238]  INFO -- default-centos-72:       declared_type :mysql_service
+I, [2017-07-20T18:19:53.317954 #10238]  INFO -- default-centos-72:       cookbook_name "mysqlwrapper"
+I, [2017-07-20T18:19:53.317972 #10238]  INFO -- default-centos-72:       recipe_name "default"
+I, [2017-07-20T18:19:53.317993 #10238]  INFO -- default-centos-72:       port "3306"
+I, [2017-07-20T18:19:53.318021 #10238]  INFO -- default-centos-72:       version "5.5"
+I, [2017-07-20T18:19:53.318052 #10238]  INFO -- default-centos-72:       initial_root_password "rajat@"
+I, [2017-07-20T18:19:53.318081 #10238]  INFO -- default-centos-72:     end
+I, [2017-07-20T18:19:53.318110 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.318137 #10238]  INFO -- default-centos-72:     System Info:
+I, [2017-07-20T18:19:53.318165 #10238]  INFO -- default-centos-72:     ------------
+I, [2017-07-20T18:19:53.318198 #10238]  INFO -- default-centos-72:     chef_version=13.2.20
+I, [2017-07-20T18:19:53.318238 #10238]  INFO -- default-centos-72:     platform=centos
+I, [2017-07-20T18:19:53.318272 #10238]  INFO -- default-centos-72:     platform_version=7.2.1511
+I, [2017-07-20T18:19:53.318303 #10238]  INFO -- default-centos-72:     ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+I, [2017-07-20T18:19:53.318339 #10238]  INFO -- default-centos-72:     program_name=chef-solo worker: ppid=11018;start=12:48:53;
+I, [2017-07-20T18:19:53.318372 #10238]  INFO -- default-centos-72:     executable=/opt/chef/bin/chef-solo
+I, [2017-07-20T18:19:53.318402 #10238]  INFO -- default-centos-72:     
+I, [2017-07-20T18:19:53.318467 #10238]  INFO -- default-centos-72: 
+I, [2017-07-20T18:19:53.318498 #10238]  INFO -- default-centos-72: Running handlers:
+I, [2017-07-20T18:19:53.318528 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: Running exception handlers
+I, [2017-07-20T18:19:53.318558 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: Running exception handlers
+I, [2017-07-20T18:19:53.318593 #10238]  INFO -- default-centos-72: Running handlers complete
+I, [2017-07-20T18:19:53.318625 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: Exception handlers complete
+I, [2017-07-20T18:19:53.318656 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: Exception handlers complete
+I, [2017-07-20T18:19:53.318687 #10238]  INFO -- default-centos-72: Chef Client failed. 0 resources updated in 58 seconds
+I, [2017-07-20T18:19:53.318724 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-07-20T18:19:53.318755 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-07-20T18:19:53.318789 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-07-20T18:19:53.318820 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-07-20T18:19:53.318854 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: mysql_service[mysql-foo] (mysqlwrapper::default line 7) had an error: Chef::Exceptions::Package: mysql_server_installation_package[mysql-foo] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_service.rb line 36) had an error: Chef::Exceptions::Package: yum_package[mysql-community-server] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb line 17) had an error: Chef::Exceptions::Package: No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.318886 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] ERROR: mysql_service[mysql-foo] (mysqlwrapper::default line 7) had an error: Chef::Exceptions::Package: mysql_server_installation_package[mysql-foo] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_service.rb line 36) had an error: Chef::Exceptions::Package: yum_package[mysql-community-server] (/tmp/kitchen/cache/cookbooks/mysql/libraries/mysql_server_installation_package.rb line 17) had an error: Chef::Exceptions::Package: No candidate version available for mysql-community-server
+I, [2017-07-20T18:19:53.396562 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+I, [2017-07-20T18:19:53.396648 #10238]  INFO -- default-centos-72: [2017-07-20T12:49:51+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2017-07-20T18:19:53.407692 #10238] ERROR -- default-centos-72: Converge failed on instance <default-centos-72>.
+E, [2017-07-20T18:19:53.407855 #10238] ERROR -- default-centos-72: ------Exception-------
+E, [2017-07-20T18:19:53.407894 #10238] ERROR -- default-centos-72: Class: Kitchen::ActionFailed
+E, [2017-07-20T18:19:53.407923 #10238] ERROR -- default-centos-72: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --no-color --json-attributes /tmp/kitchen/dna.json  --force-formatter 
+']
+E, [2017-07-20T18:19:53.407961 #10238] ERROR -- default-centos-72: ----------------------
+E, [2017-07-20T18:19:53.407988 #10238] ERROR -- default-centos-72: ------Backtrace-------
+E, [2017-07-20T18:19:53.408014 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-07-20T18:19:53.408055 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-07-20T18:19:53.408083 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-07-20T18:19:53.408110 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-07-20T18:19:53.408138 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-07-20T18:19:53.408165 #10238] ERROR -- default-centos-72: /usr/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-07-20T18:19:53.408192 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-07-20T18:19:53.408220 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-07-20T18:19:53.408247 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-07-20T18:19:53.408274 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-07-20T18:19:53.408301 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-07-20T18:19:53.408326 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-07-20T18:19:53.408353 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-07-20T18:19:53.408379 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-07-20T18:19:53.408708 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-07-20T18:19:53.408750 #10238] ERROR -- default-centos-72: ----End Backtrace-----
+E, [2017-07-20T18:19:53.408779 #10238] ERROR -- default-centos-72: ---Nested Exception---
+E, [2017-07-20T18:19:53.408806 #10238] ERROR -- default-centos-72: Class: Kitchen::Transport::SshFailed
+E, [2017-07-20T18:19:53.408832 #10238] ERROR -- default-centos-72: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --no-color --json-attributes /tmp/kitchen/dna.json  --force-formatter 
+']
+E, [2017-07-20T18:19:53.408861 #10238] ERROR -- default-centos-72: ----------------------
+E, [2017-07-20T18:19:53.408898 #10238] ERROR -- default-centos-72: ------Backtrace-------
+E, [2017-07-20T18:19:53.408928 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-07-20T18:19:53.408956 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-07-20T18:19:53.408983 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-07-20T18:19:53.409026 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-07-20T18:19:53.409055 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-07-20T18:19:53.409096 #10238] ERROR -- default-centos-72: /usr/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-07-20T18:19:53.409138 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-07-20T18:19:53.409168 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-07-20T18:19:53.409196 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-07-20T18:19:53.409223 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-07-20T18:19:53.409254 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-07-20T18:19:53.409271 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-07-20T18:19:53.409285 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-07-20T18:19:53.409300 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-07-20T18:19:53.409314 #10238] ERROR -- default-centos-72: /var/lib/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-07-20T18:19:53.409328 #10238] ERROR -- default-centos-72: ----End Backtrace-----
